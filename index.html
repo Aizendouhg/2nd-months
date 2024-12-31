@@ -105,11 +105,13 @@ body {
     </style>
     <script>
         
-        <audio autoplay loop>
-    <source src="music.mp3" type="audio/mp3">
-    <source src="music.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-</audio>
+<script>
+    var audio = new Audio('music.mp3');
+    audio.loop = true;  // Make it loop
+    audio.autoplay = true; // Autoplay when the page loads
+    audio.play();  // Play the music
+</script>
+
         function showLetter() {
             document.querySelector('.container').style.display = 'block';
             document.querySelector('.show-button').style.display = 'none';
