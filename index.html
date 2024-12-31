@@ -89,21 +89,16 @@
         audio.loop = true;  
         audio.autoplay = false; 
 
-        function playMusic() {
-            audio.play();  
-        }
-
-        function showLetter() {
-            document.querySelector('.container').style.display = 'block';
-            document.querySelector('.show-button').style.display = 'none';
+        function showLetterAndPlayMusic() {
+            audio.play();  // Play music
+            document.querySelector('.container').style.display = 'block';  // Show letter
+            document.querySelector('.show-button').style.display = 'none';  // Hide the button
         }
     </script>
 </head>
 <body>
 
-    <button onclick="playMusic()">❤️</button>
-
-    <button class="show-button" onclick="showLetter()">❤️</button>
+    <button class="show-button" onclick="showLetterAndPlayMusic()">❤️</button>
 
     <div class="container">
         <div class="title">To My Beloved Wife</div>
