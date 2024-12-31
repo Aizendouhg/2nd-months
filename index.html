@@ -3,112 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Happy 2nd Months of love </title>
+    <title>Happy 2nd Months of Love</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('Messenger_creation_49056A0D-6A39-4FE7-BAA7-E96020844A2E.jpeg') no-repeat center center/cover;
-    background-attachment: fixed;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('Messenger_creation_49056A0D-6A39-4FE7-BAA7-E96020844A2E.jpeg') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
 
-.container {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    display: none;
-}
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            display: none;
+        }
 
-.title {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #d6336c;
-}
+        .title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #d6336c;
+        }
 
-.letter {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-    white-space: pre-wrap;
-}
+        .letter {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+        }
 
-.signature {
-    font-size: 16px;
-    color: #333;
-    margin-top: 20px;
-}
+        .signature {
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+        }
 
-.show-button {
-    padding: 15px;
-    font-size: 24px;
-    color: #fff;
-    background-color: #d6336c;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+        .show-button {
+            padding: 15px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #d6336c;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
 
-.show-button::before, .show-button::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 15px;
-    background-color: #d6336c;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 10px;
-}
+        .show-button::before, .show-button::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 15px;
+            background-color: #d6336c;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 10px;
+        }
 
-.show-button::before {
-    left: -30px;
-}
+        .show-button::before {
+            left: -30px;
+        }
 
-.show-button::after {
-    right: -30px;
-}
+        .show-button::after {
+            right: -30px;
+        }
 
-.show-button:hover {
-    background-color: #c0285b;
-}
-
-.show-button::before, .show-button::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 15px;
-    background-color: #d6336c;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 10px;
-}
-
-.show-button::before {
-    left: -30px;
-}
-
-.show-button::after {
-    right: -30px;
-}
+        .show-button:hover {
+            background-color: #c0285b;
+        }
     </style>
     <script>
-        
-    var audio = new Audio('music.mp3');
-    audio.loop = true;  // Make it loop
-    audio.autoplay = true; // Autoplay when the page loads
-    audio.play();  // Play the music
+        var audio = new Audio('music.mp3');
+        audio.loop = true;  
+        audio.autoplay = false; 
+
+        function playMusic() {
+            audio.play();  
 
         function showLetter() {
             document.querySelector('.container').style.display = 'block';
@@ -117,10 +99,13 @@ body {
     </script>
 </head>
 <body>
-    
+
+    <button onclick="playMusic()">Play Music ❤️</button>
+
     <button class="show-button" onclick="showLetter()">❤️</button>
+
     <div class="container">
-        <div class="title">To My Beloved Wife </div>
+        <div class="title">To My Beloved Wife</div>
         <div class="letter">
             Hi Micaella Victorino Mabanta, my only one, my love of my life, my everything! 🌟
 
